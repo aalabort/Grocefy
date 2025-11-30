@@ -1,4 +1,7 @@
-# Grocefy 🛒
+<div align="center">
+  <img src="grocefy_icon.jpeg" alt="Grocefy Logo" width="360"/>
+  <h1>Grocery Price Optimization Agent - System Architecture</h1>
+</div>
 
 An intelligent multi-agent system that finds the best grocery prices across UK supermarkets using Computer Vision and LLMs.
 
