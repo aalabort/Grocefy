@@ -7,7 +7,11 @@ An intelligent multi-agent system that finds the best grocery prices across UK s
 
 ## 🎬 Demo
 
-https://github.com/aalabort/grocefy/Grocefy_video.mp4
+<video width="600" controls>
+  <source src="Grocefy_video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 > **Note**: If the video doesn't play above, you can [download it here](./Grocefy_video.mp4) or view it directly in the repository.
 

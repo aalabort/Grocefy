@@ -1,1 +1,4 @@
-product_name,current_supermarket,current_regular_price,current_membership_price,cheapest_supermarket,cheapest_regular_price,cheapest_membership_price,savings_vs_current,saving_cheapest_regular_vs_current_regular,saving_cheapest_regular_vs_current_membership,current_regular_vs_cheapest_membership,saving_cheapest_membership_vs_current_membership
+product_name,current_supermarket,current_regular_price,current_membership_price,cheapest_supermarket,cheapest_regular_price,cheapest_membership_price,savings_vs_current,saving_cheapest_regular_vs_current_regular,saving_cheapest_regular_vs_current_membership,saving_cheapest_membership_vs_current_regular,saving_cheapest_membership_vs_current_membership
+"Tunnocks Milk Chocolate Caramel Wafer Biscuits Multipack, 240g",Tesco,£2.25,N/A,Tesco,£1.15,N/A,£1.10,£1.10,N/A,N/A,N/A
+Ferrero Raffaello Coconut & Almond Pralines 230G,Tesco,£6.55,£5.25,Tesco,£6.55,£5.25,£0.00,£0.00,£-1.30,£1.30,£0.00
+Coca Cola Regular 24 X 330 Ml Pack,Tesco    ,£14.45,£12.50,Aldi,£12.49,N/A,£1.96,£1.96,£0.01,N/A,N/A
