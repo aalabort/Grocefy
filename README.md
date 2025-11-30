@@ -2,6 +2,12 @@
 
 An intelligent multi-agent system that finds the best grocery prices across UK supermarkets using Computer Vision and LLMs.
 
+## 🎬 Demo
+
+https://github.com/aalabort/Grocefy/assets/Grocefy_video.mp4
+
+> **Note**: If the video doesn't play above, you can [download it here](./Grocefy_video.mp4) or view it directly in the repository.
+
 ## 🚀 Features
 
 - **Multi-Supermarket Search**: Searches Tesco, Morrisons, Sainsbury's, Aldi, Lidl, and Waitrose.
