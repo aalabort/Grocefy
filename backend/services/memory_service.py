@@ -10,7 +10,10 @@ class HistoryCSVMemoryService:
     It acts as a read-only interface to the 'History' data.
     """
     
-    def __init__(self, history_dir: str = "backend/data/history"):
+    def __init__(self, history_dir: str = None):
+        if history_dir is None:
+            from config import BASE_DIR
+            history_dir = str(BASE_DIR / "data/history")
         self.history_dir = Path(history_dir)
         
     def get_product_history(self, product_name: str) -> str:

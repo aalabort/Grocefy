@@ -25,7 +25,8 @@ from config import (
     VISION_MODEL,
     ENABLE_VISION_RATE_LIMITING,
     VISION_MAX_CONCURRENT_CALLS,
-    VISION_CALL_DELAY_SECONDS
+    VISION_CALL_DELAY_SECONDS,
+    BASE_DIR
 )
 from utils.image_store import save_product_image, get_product_image
 from utils.name_simplifier import simplify_product_name
@@ -589,7 +590,7 @@ async def capture_reference_image(supermarket: str, query: str) -> str:
     # We found SOMETHING! Let's save it
     # The screenshot exists at this point
     supermarket_key = supermarket.lower().strip()
-    debug_screenshot = f"backend/debug/debug_vision_{supermarket_key}.png"
+    debug_screenshot = str(BASE_DIR / "debug" / f"debug_vision_{supermarket_key}.png")
     
     if not Path(debug_screenshot).exists():
         print(f"⚠️  Screenshot file not found, cannot save reference image")
@@ -928,7 +929,7 @@ async def vision_fetch_product(supermarket: str, query: str) -> dict:
                 screenshot_bytes, _ = await take_screenshot(page)
                 
                 # Save screenshot for debugging
-                screenshot_filename = f"backend/debug/debug_vision_{supermarket_key}.png"
+                screenshot_filename = str(BASE_DIR / "debug" / f"debug_vision_{supermarket_key}.png")
                 Path(screenshot_filename).write_bytes(screenshot_bytes)
                 print(f"💾 [{query} @ {supermarket}] Saved screenshot to {screenshot_filename}")
             except Exception as e:
@@ -1211,7 +1212,7 @@ async def vision_fetch_product_with_visual_match(
             
             # Get candidate image from the latest screenshot
             supermarket_key = supermarket.lower().strip()
-            candidate_screenshot = f"backend/debug/debug_vision_{supermarket_key}.png"
+            candidate_screenshot = str(BASE_DIR / "debug" / f"debug_vision_{supermarket_key}.png")
             
             if Path(candidate_screenshot).exists():
                 with open(candidate_screenshot, 'rb') as f:
@@ -1235,7 +1236,7 @@ async def vision_fetch_product_with_visual_match(
                     }
                 
                 # Save candidate image to temporary debug folder for inspection
-                debug_folder = Path("backend/data/product_images/product_images_from_rest_supermarkets")
+                debug_folder = BASE_DIR / "data/product_images/product_images_from_rest_supermarkets"
                 debug_folder.mkdir(parents=True, exist_ok=True)
                 
                 # Create filename: ProductName_Supermarket.png

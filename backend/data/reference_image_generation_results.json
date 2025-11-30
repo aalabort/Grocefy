@@ -1,15 +1,4 @@
 {
-    "success": [
-        {
-            "product": "Ferrero Raffaello Coconut & Almond Pralines 230G",
-            "supermarket": "Tesco",
-            "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/grocefy/backend/data/product_images/Ferrero_Raffaello_Coconut_Almond_Pralines_230G_Tesco.png"
-        },
-        {
-            "product": "Tunnocks Milk Chocolate Caramel Wafer Biscuits Multipack, 240g",
-            "supermarket": "Tesco",
-            "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/grocefy/backend/data/product_images/Tunnocks_Milk_Chocolate_Caramel_Wafer_Biscuits_Multipack_240g_Tesco.png"
-        }
-    ],
+    "success": [],
     "failed": []
 }

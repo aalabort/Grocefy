@@ -5,7 +5,10 @@ from typing import List, Dict, Any
 import os
 
 class HistoricalPriceTracker:
-    def __init__(self, history_dir: str = "backend/data/history"):
+    def __init__(self, history_dir: str = None):
+        if history_dir is None:
+            from config import BASE_DIR
+            history_dir = str(BASE_DIR / "data/history")
         self.history_dir = Path(history_dir)
         self.history_dir.mkdir(parents=True, exist_ok=True)
 

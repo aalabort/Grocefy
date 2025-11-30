@@ -2,12 +2,12 @@
 
 This document provides a comprehensive overview of the agentic system designed to find the best grocery prices across multiple supermarkets.
 
-## 1. High-Level Architecture 🏗️
+## 1. 🏗️ High-Level Architecture 
 
 The system is built using the **ADK (Agent Development Kit)**. It uses a hierarchical agent structure to process products efficiently.
 
 
-### Agent Hierarchy Diagram 📊
+### 📊 Agent Hierarchy Diagram 
 
 ![Agent Hierarchy Diagram](docs/images/agent_hierarchy.png)
 
@@ -21,7 +21,7 @@ The system is built using the **ADK (Agent Development Kit)**. It uses a hierarc
 
 ---
 
-## 2. Product Discovery Workflow 🔍
+## 2. 🔍 Product Discovery Workflow 
 
 The system follows a rigorous process to ensure it finds the *correct* product, not just a keyword match.
 
@@ -52,12 +52,19 @@ If the exact name doesn't work (e.g., different naming conventions), the system:
 
 ---
 
-## 3. Quota Management & Rate Limiting ⏳
+## 3. ⏳ Quota Management & Rate Limiting 
 
 To handle API quota limits (e.g., Gemini Free Tier), the system implements configurable rate limiting.
 
 ### ⏱️ Batch Processing
 Instead of launching agents for **ALL** products at once, `main.py` processes them in batches.
+
+**Configuration** (`config.py`):
+- **`ENABLE_BATCH_PROCESSING`**: Master flag to enable/disable batch processing
+- **`BATCH_SIZE`**: Number of products to process per batch (e.g., `1` = process 1 product across all supermarkets before moving to next product)
+- **`BATCH_DELAY_SECONDS`**: Delay in seconds between batches (e.g., `60` = wait 60 seconds before starting next batch)
+
+**Example**: With `BATCH_SIZE=1` and 6 supermarkets, each batch processes 1 product × 6 supermarkets = 6 parallel agents.
 
 ```mermaid
 sequenceDiagram
@@ -84,7 +91,7 @@ Inside each `VisionAgent`, there is a semaphore to limit concurrent API calls ac
 
 ---
 
-## 4. Optimization & History 📈
+## 4. 📈 Optimization & History 
 
 ### Optimization Logic
 The `OptimizationAgent` compares the found prices against the user's current price.
@@ -109,7 +116,7 @@ Coca Cola - Membership,1.20,1.20
 
 ---
 
-## 5. Memory System (Actionable Intelligence) 🧠
+## 5. 🧠 Memory System (Actionable Intelligence) 
 
 The system leverages the historical price data (`backend/data/history/*.csv`) as its long-term memory. This ensures a **Single Source of Truth** for all price intelligence.
 
@@ -130,7 +137,7 @@ This transforms the agent from a simple "price checker" into a **"Strategic Advi
 
 ---
 
-## 6. Future Enhancements 🚀
+## 6. 🚀 Future Enhancements 
 
 The system is designed to be extensible. Here are planned enhancements to make it even more powerful:
 
