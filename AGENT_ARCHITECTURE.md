@@ -1,4 +1,7 @@
-# Grocery Price Optimization Agent - System Architecture
+<div align="center">
+  <img src="grocefy_icon.jpeg" alt="Grocefy Logo" width="360"/>
+  <h1>Grocery Price Optimization Agent - System Architecture</h1>
+</div>
 
 This document provides a comprehensive overview of the agentic system designed to find the best grocery prices across multiple supermarkets.
 
