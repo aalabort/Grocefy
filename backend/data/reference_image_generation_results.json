@@ -1,25 +1,12 @@
 {
-  "success": [
-    {
-      "product": "Tunnocks Milk Chocolate Caramel Wafer Biscuits",
-      "supermarket": "Tesco",
-      "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/backend/data/product_images/Tunnocks_Milk_Chocolate_Caramel_Wafer_Biscuits_Tesco.png"
+    "Ferrero Raffaello Coconut & Almond Pralines 230G": {
+        "supermarket": "Tesco",
+        "image_path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/grocefy/backend/data/product_images/Ferrero_Raffaello_Coconut_Almond_Pralines_230G_Tesco.png",
+        "status": "success"
     },
-    {
-      "product": "Ferrero Raffaello Coconut & Almond Pralines 230G",
-      "supermarket": "Tesco",
-      "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/backend/data/product_images/Ferrero_Raffaello_Coconut_Almond_Pralines_230G_Tesco.png"
-    },
-    {
-      "product": "Nakd Cocoa Orange Fruit & Nut Bars 4 Pack 140g",
-      "supermarket": "Tesco",
-      "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/backend/data/product_images/Nakd_Cocoa_Orange_Fruit_Nut_Bars_4_Pack_140g_Tesco.png"
-    },
-    {
-      "product": "Coca Cola Regular 24 X 330 Ml Pack",
-      "supermarket": "Tesco    ",
-      "path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/backend/data/product_images/Coca_Cola_Regular_24_X_330_Ml_Pack_Tesco.png"
+    "Tunnocks Milk Chocolate Caramel Wafer Biscuits Multipack, 240g": {
+        "supermarket": "Tesco",
+        "image_path": "/Users/arnaualabort/Documents/Projects/kaggle_5day_agents_course/grocefy/backend/data/product_images/Tunnocks_Milk_Chocolate_Caramel_Wafer_Biscuits_Multipack_240g_Tesco.png",
+        "status": "success"
     }
-  ],
-  "failed": []
 }
