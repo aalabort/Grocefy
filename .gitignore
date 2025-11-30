@@ -24,6 +24,7 @@ MANIFEST
 # Virtual Environment
 venv/
 env/
+myenv/
 ENV/
 
 # Environment Variables
