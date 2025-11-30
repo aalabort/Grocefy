@@ -5,7 +5,7 @@
 
 An intelligent multi-agent system that finds the best grocery prices across UK supermarkets using Computer Vision and LLMs.
 
-## 🎬 Demo
+## 🎬 Video summary
 
 <video width="600" controls>
   <source src="Grocefy_video.mp4" type="video/mp4">
